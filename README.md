@@ -8,6 +8,12 @@ This is a proof of concept for generating WASM applications from mostly HTML.
 go get ./...
 make run
 ```
+OR
+```
+docker build -t you/playground .
+docker run -p 3000:3000 you/playground
+```
+
 ## Directories
 
 * app - contains the HTML and Javascript bootstrap

@@ -7,6 +7,7 @@ import (
 	"github.com/gowasm/vecty"
 	"github.com/gowasm/vecty/elem"
 	"github.com/gowasm/vecty/event"
+	"github.com/gowasm/vecty/prop"
 )
 
 func (p *Index) Render() vecty.ComponentOrHTML {
@@ -34,6 +35,17 @@ func (p *Index) Render() vecty.ComponentOrHTML {
 					vecty.Text("Use this document as a way to quickly start any new project."),
 					elem.Break(),
 					vecty.Text("All you get is this text and a mostly barebones HTML document."),
+				),
+				elem.Paragraph(
+					vecty.Markup(
+						vecty.Class("lead"),
+					),
+					elem.Anchor(
+						vecty.Markup(
+							prop.Href("https://github.com/factorapp/playground"),
+						),
+						vecty.Text("Source"),
+					),
 				),
 				elem.Button(
 					vecty.Markup(
