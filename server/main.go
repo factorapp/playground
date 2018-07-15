@@ -23,7 +23,7 @@ func main() {
 
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("./assets"))))
 	http.HandleFunc("/", indexHandler)
-	log.Fatal(http.ListenAndServe(":3000", nil))
+	log.Fatal(http.ListenAndServe(":80", nil))
 }
 func jsHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./app/wasm_exec.js")

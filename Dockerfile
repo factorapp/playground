@@ -58,5 +58,5 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ADD . $GOPATH/src/github.com/factorapp/playground
 WORKDIR $GOPATH/src/github.com/factorapp/playground
 RUN GOARCH=wasm GOOS=js go get ./...
-EXPOSE 3000
+EXPOSE 80
 CMD ["make", "run"]
