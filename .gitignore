@@ -1,3 +1,4 @@
 server-app
 example.wasm
 .envrc
+client/client
