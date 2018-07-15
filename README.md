@@ -11,7 +11,7 @@ make run
 OR
 ```
 docker build -t you/playground .
-docker run -p 3000:3000 you/playground
+docker run -p 80:80 you/playground
 ```
 
 ## Directories
