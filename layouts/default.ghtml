@@ -1,0 +1,4 @@
+<div id="main">
+    <Nav Name="LowerizeMe"/>
+    {{ .Yield }}
+</div>
