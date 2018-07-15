@@ -1,6 +1,6 @@
 # Playground
 This is a proof of concept for generating WASM applications from mostly HTML.
-*REQUIRES Go 1.11*
+*REQUIRES Go 1.11+ at TIP (July 15, 2018)*
 
 ## Running
 
