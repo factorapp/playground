@@ -1,9 +1,11 @@
 package pages
 
 import (
-	"fmt"
-	"strconv"
-	"strings"
+	
+    "fmt"
+    "strings"
+    "strconv"
+
 
 	"github.com/gowasm/vecty"
 )
@@ -19,15 +21,16 @@ var IndexTemplate = `<main role="main" class="container">
 </main>
 
 `
-var IndexTitle = "Page Title!"
+var IndexTitle =  "Page Title!"
 
 type Index struct {
 	vecty.Core
 	Title string
+	
+    Name string
+    count int
+    CountText string
 
-	Name      string
-	count     int
-	CountText string
 }
 
 func (c *Index) GetTitle() string {
@@ -40,9 +43,11 @@ func (c *Index) Template() string {
 	return IndexTemplate
 }
 
-func (p *Index) LowerName() string {
-	return strings.ToLower(p.Name)
-}
+
+ 
+    func (p *Index) LowerName() string {
+        return strings.ToLower(p.Name)
+    }
 
 func (p *Index) OnClick(e *vecty.Event) {
 	fmt.Println("Someone clicked on me", e.Target)
@@ -51,3 +56,5 @@ func (p *Index) OnClick(e *vecty.Event) {
 
 	vecty.Rerender(p)
 }
+
+

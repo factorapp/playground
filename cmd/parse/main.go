@@ -12,7 +12,6 @@ import (
 
 	"github.com/alecthomas/template"
 	"github.com/factorapp/factor/files"
-	"github.com/gobuffalo/envy"
 
 	"github.com/factorapp/factor/component"
 )
@@ -210,7 +209,9 @@ func ProcessPages(dir string) error {
 			// write the Go file
 			comp := files.ComponentName(path)
 
-			appPkg := envy.CurrentPackage()
+			//		appPkg := envy.CurrentPackage()
+			//		fmt.Println(appPkg)
+			appPkg := "github.com/factorapp/playground"
 			transpiler, err := component.NewTranspiler(brc, false, appPkg, comp, "pages")
 			if err != nil {
 				log.Println("ERROR", err)

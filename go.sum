@@ -24,8 +24,12 @@ github.com/gopherjs/vecty v0.0.0-20180525005238-a3bd138280bf/go.mod h1:5YRDuy7i7
 github.com/gorilla/css v1.0.0 h1:BQqNyPTi50JCFMTw/b67hByjMVXZRwGha6wxVGkeihY=
 github.com/gorilla/css v1.0.0/go.mod h1:Dn721qIggHpt4+EFCcTLTU/vk5ySda2ReITrtgBl60c=
 github.com/gorilla/rpc v1.1.0/go.mod h1:V4h9r+4sF5HnzqbwIez0fKSpANP0zlYd3qR7p36jkTQ=
+github.com/gowasm/go-js-dom v0.0.0-20180708230129-96fc3d964a17 h1:27FBanY0KjqeQgM2bKRt2Os4ess4D4eo9Vv60ZrxlZc=
+github.com/gowasm/go-js-dom v0.0.0-20180708230129-96fc3d964a17/go.mod h1:K37PTzggLHdwZwVKIlgreQbR7b1pwrudrZEFYcPifKE=
 github.com/gowasm/router v0.5.0 h1:y77vpo2QRJGpi/a072YIHw+wdAI0U4M9z0UCznW7mxs=
 github.com/gowasm/router v0.5.0/go.mod h1:QxUQWSLbwUpnH+eYpsp4L/cmuxMjK93YOePIyd2tav4=
+github.com/gowasm/router v0.5.1 h1:VNVViNT36v/7xzCX3aio3gSMw4Tj19ygcxmYmtgBZfA=
+github.com/gowasm/router v0.5.1/go.mod h1:QxUQWSLbwUpnH+eYpsp4L/cmuxMjK93YOePIyd2tav4=
 github.com/gowasm/vecty v0.0.0-20180708230244-0151905da086 h1:yCAW35FtKqarvfMi/1uAdTs47la6HtNF7Onl6w1+A8Q=
 github.com/gowasm/vecty v0.0.0-20180708230244-0151905da086/go.mod h1:otcQ+kDw3rABBAlJh8bQ1+OtW2kjmJzXo2cXYyFtkj4=
 github.com/hashicorp/hcl v0.0.0-20180404174102-ef8a98b0bbce/go.mod h1:oZtUIOe8dh44I2q6ScRibXws4Ajl+d+nod3AaR9vL5w=
