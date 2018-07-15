@@ -4,11 +4,6 @@ package main
 import (
 	"log"
 	"net/http"
-
-	"github.com/gorilla/rpc/v2"
-	"github.com/gorilla/rpc/v2/json"
-
-	"github.com/factorapp/factor/examples/models"
 )
 
 func wasmHandler(w http.ResponseWriter, r *http.Request) {
@@ -16,13 +11,7 @@ func wasmHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./app/example.wasm")
 }
 func main() {
-	s := rpc.NewServer()
-	s.RegisterCodec(json.NewCodec(), "application/json")
-	s.RegisterCodec(json.NewCodec(), "application/json;charset=UTF-8")
-	tds := new(models.TodoServer)
-	s.RegisterService(tds, "TodoServer")
 	http.HandleFunc("/app/example.wasm", wasmHandler)
-	http.Handle("/rpc", s)
 	/*	cwd, err := os.Getcwd()
 		if err != nil {
 			panic(err)
