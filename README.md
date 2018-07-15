@@ -17,6 +17,7 @@ make run
 * layouts - FUTURE/not used yet
 * pages - individual pages, indexed by route
 * server - Go HTTP server that serves the "app" folder and assets
+* cmd/parse - the `parse` command that transforms ".ghtml" files into Go source
 
 ## Component Format
 ```
