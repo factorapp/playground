@@ -8,6 +8,15 @@ This is a proof of concept for generating WASM applications from mostly HTML.
 go get ./...
 make run
 ```
+## Directories
+
+* app - contains the HTML and Javascript bootstrap
+* assets - page assets (js,images, etc), served as "/assets/*"
+* client - the WASM main() that gets run in the browser
+* components - reusable HTML components
+* layouts - FUTURE/not used yet
+* pages - individual pages, indexed by route
+* server - Go HTTP server that serves the "app" folder and assets
 
 ## Component Format
 ```
