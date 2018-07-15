@@ -28,7 +28,8 @@ make run
 @Methods
 func (n *Nav) LowerName() string {
     return strings.ToLower(n.Name)
-}```
+}
+```
 
 The first part of the `.ghtml` file is the HTML template.
 The template is followed by several tags:
@@ -61,7 +62,8 @@ The template is followed by several tags:
 @Methods 
     func (p *Index) LowerName() string {
         return strings.ToLower(p.Name)
-}```
+}
+```
 
 
 The first part of the `.ghtml` file is the HTML template. It may include reference tags to components in the "./components" package
