@@ -9,6 +9,8 @@ github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/factorapp/factor v0.0.0-20180715151210-a0f44fbfe17b h1:Ce4b7CQhcPFI2SaJAToeT3j5NKZj8YKSmhFRKPDquJA=
 github.com/factorapp/factor v0.0.0-20180715151210-a0f44fbfe17b/go.mod h1:oXRGVzB4izZ7aw4LadRZFC/4Ey7Z5RSbpy+dXKUBEUg=
+github.com/factorapp/factor v0.0.1 h1:gxNNgZk6UsLy3h/z/uNbTpkycF1cmVYWGgxqRmqzqrY=
+github.com/factorapp/factor v0.0.1/go.mod h1:oXRGVzB4izZ7aw4LadRZFC/4Ey7Z5RSbpy+dXKUBEUg=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/go-humble/detect v0.1.2 h1:mitrDomAvFJiH2D4LNwlRDj5d/3woOATAxKfIsoMP0I=
 github.com/go-humble/detect v0.1.2/go.mod h1:pVrYDy9oO+niVnRn94ljzppsRGpVs0l2+xTDW6u1nAQ=
@@ -26,12 +28,16 @@ github.com/gorilla/css v1.0.0/go.mod h1:Dn721qIggHpt4+EFCcTLTU/vk5ySda2ReITrtgBl
 github.com/gorilla/rpc v1.1.0/go.mod h1:V4h9r+4sF5HnzqbwIez0fKSpANP0zlYd3qR7p36jkTQ=
 github.com/gowasm/go-js-dom v0.0.0-20180708230129-96fc3d964a17 h1:27FBanY0KjqeQgM2bKRt2Os4ess4D4eo9Vv60ZrxlZc=
 github.com/gowasm/go-js-dom v0.0.0-20180708230129-96fc3d964a17/go.mod h1:K37PTzggLHdwZwVKIlgreQbR7b1pwrudrZEFYcPifKE=
+github.com/gowasm/go-js-dom v0.0.1 h1:FCbfUmS3wPOepLmQ2pQzicHUEoW9KIYiM+osR/NE1n8=
+github.com/gowasm/go-js-dom v0.0.1/go.mod h1:K37PTzggLHdwZwVKIlgreQbR7b1pwrudrZEFYcPifKE=
 github.com/gowasm/router v0.5.0 h1:y77vpo2QRJGpi/a072YIHw+wdAI0U4M9z0UCznW7mxs=
 github.com/gowasm/router v0.5.0/go.mod h1:QxUQWSLbwUpnH+eYpsp4L/cmuxMjK93YOePIyd2tav4=
 github.com/gowasm/router v0.5.1 h1:VNVViNT36v/7xzCX3aio3gSMw4Tj19ygcxmYmtgBZfA=
 github.com/gowasm/router v0.5.1/go.mod h1:QxUQWSLbwUpnH+eYpsp4L/cmuxMjK93YOePIyd2tav4=
 github.com/gowasm/vecty v0.0.0-20180708230244-0151905da086 h1:yCAW35FtKqarvfMi/1uAdTs47la6HtNF7Onl6w1+A8Q=
 github.com/gowasm/vecty v0.0.0-20180708230244-0151905da086/go.mod h1:otcQ+kDw3rABBAlJh8bQ1+OtW2kjmJzXo2cXYyFtkj4=
+github.com/gowasm/vecty v0.0.1 h1:lJOkBRuFuK972e4hEnQAq0DwuGkpkUyF78v2EgkJ6Vs=
+github.com/gowasm/vecty v0.0.1/go.mod h1:otcQ+kDw3rABBAlJh8bQ1+OtW2kjmJzXo2cXYyFtkj4=
 github.com/hashicorp/hcl v0.0.0-20180404174102-ef8a98b0bbce/go.mod h1:oZtUIOe8dh44I2q6ScRibXws4Ajl+d+nod3AaR9vL5w=
 github.com/inconshreveable/mousetrap v1.0.0/go.mod h1:PxqpIevigyE2G7u3NXJIT2ANytuPF1OarO4DADm73n8=
 github.com/joho/godotenv v1.2.0 h1:vGTvz69FzUFp+X4/bAkb0j5BoLC+9bpqTWY8mjhA9pc=
