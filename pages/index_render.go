@@ -18,9 +18,7 @@ func (p *Index) Render() vecty.ComponentOrHTML {
 				vecty.Attribute("role", "main"),
 				vecty.Class("container"),
 			),
-			&components.Nav{
-				Name: "Stuff",
-			},
+			&components.Nav{Name: "Stuff"},
 			elem.Div(
 				vecty.Markup(
 					vecty.Class("starter-template"),
@@ -54,7 +52,6 @@ func (p *Index) Render() vecty.ComponentOrHTML {
 					vecty.Text("Increment"),
 				),
 				elem.Paragraph(
-
 					vecty.Text(p.CountText),
 				),
 			),

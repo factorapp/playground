@@ -18,7 +18,6 @@ func (p *Nav) Render() vecty.ComponentOrHTML {
 				vecty.Class("navbar-brand"),
 				prop.Href("#"),
 			),
-
 			vecty.Text(p.LowerName()),
 		),
 		elem.Button(
