@@ -2,7 +2,9 @@ package pages
 
 import (
 	
+    "fmt"
     "strings"
+    "strconv"
 
 
 	"github.com/gowasm/vecty"
@@ -13,6 +15,7 @@ var IndexTemplate = `<main role="main" class="container">
     <div class="starter-template">
         <h1>Bootstrap starter template</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br/> All you get is this text and a mostly barebones HTML document.</p>
+        <button vecty:onclick="OnClick">Increment</button><p>{vecty-field:CountText}</p>
     </div>
 </main>
 
@@ -24,6 +27,8 @@ type Index struct {
 	Title string
 	
     Name string
+    count int
+    CountText string
 
 }
 
@@ -42,4 +47,13 @@ func (c *Index) Template() string {
     func (p *Index) LowerName() string {
         return strings.ToLower(p.Name)
     }
+
+func (p *Index) OnClick(e *vecty.Event) {
+	fmt.Println("Someone clicked on me", e.Target)
+	p.count++
+	p.CountText = "Click Count: " + strconv.Itoa(p.count)
+
+	vecty.Rerender(p)
+}
+
 

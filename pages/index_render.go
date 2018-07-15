@@ -6,6 +6,7 @@ import (
 	components "github.com/factorapp/playground/components"
 	"github.com/gowasm/vecty"
 	"github.com/gowasm/vecty/elem"
+	"github.com/gowasm/vecty/event"
 )
 
 func (p *Index) Render() vecty.ComponentOrHTML {
@@ -33,6 +34,16 @@ func (p *Index) Render() vecty.ComponentOrHTML {
 					vecty.Text("Use this document as a way to quickly start any new project."),
 					elem.Break(),
 					vecty.Text("All you get is this text and a mostly barebones HTML document."),
+				),
+				elem.Button(
+					vecty.Markup(
+						event.Click(p.OnClick),
+					),
+					vecty.Text("Increment"),
+				),
+				elem.Paragraph(
+
+					vecty.Text(p.CountText),
 				),
 			),
 		),
