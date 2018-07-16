@@ -74,7 +74,7 @@ func ProcessComponents(dir string) error {
 			idx := strings.Index(scontents, "@")
 
 			rawTemplate := scontents[:idx]
-			c.Template = "`" + scontents[:idx] + "`"
+			c.Template = "`" + strings.TrimSpace(rawTemplate) + "`"
 
 			// get Parameters
 			pidx := strings.Index(scontents, "@Parameters")

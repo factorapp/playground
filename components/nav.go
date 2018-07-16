@@ -39,9 +39,7 @@ var NavTemplate = `<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
-</nav>
-
-`
+</nav>`
 
 type Nav struct {
 	vecty.Core

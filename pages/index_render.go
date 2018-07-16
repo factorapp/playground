@@ -26,6 +26,10 @@ func (p *Index) Render() vecty.ComponentOrHTML {
 				elem.Heading1(
 					vecty.Text("Bootstrap starter template"),
 				),
+				&components.Badge{
+					BadgeType: "badge-dark",
+					Text:      "Danger Zone!",
+				},
 				elem.Paragraph(
 					vecty.Markup(
 						vecty.Class("lead"),

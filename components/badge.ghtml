@@ -1,0 +1,13 @@
+<span class="badge {vecty-field:BadgeType}">{vecty-field:Text}</span>
+@Imports {
+}
+
+
+@Parameters {
+    Text string
+    BadgeType string
+
+}
+
+@Methods
+
