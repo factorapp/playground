@@ -14,6 +14,14 @@ make-parse:
 parse:
 	parse
 
+.phony: docker
+docker:
+	docker build -t bketelsen/playground .
+
+.phony: docker-push
+docker-push:
+	docker push bketelsen/playground
+
 .PHONY: run
 run: make-parse parse wasm server-app
 	./server-app
