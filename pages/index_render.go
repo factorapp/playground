@@ -54,6 +54,10 @@ func (p *Index) Render() vecty.ComponentOrHTML {
 				elem.Paragraph(
 					vecty.Text(p.CountText),
 				),
+				&components.Alert{
+					AlertType: "alert-info",
+					Text:      "Hello World",
+				},
 			),
 		),
 	)
