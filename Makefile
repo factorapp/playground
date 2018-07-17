@@ -22,6 +22,10 @@ docker:
 docker-push:
 	docker push bketelsen/playground
 
+.phony: deploy
+deploy: docker docker-push
+	./deploy.sh
+
 .PHONY: run
 run: make-parse parse wasm server-app
 	./server-app
