@@ -13,9 +13,9 @@ import (
 var IndexTemplate = `<main role="main" class="container">
     <components:Nav Name="Stuff" />
     <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
+        <h1>Factor Web Assembly Framework</h1>
         <components:Badge BadgeType="badge-dark" Text="Danger Zone!" />
-        <p class="lead">Use this document as a way to quickly start any new project.<br/> All you get is this text and a mostly barebones HTML document.</p>
+        <p class="lead">Build highly performant web applications.<br/> Using the language you love.</p>
         <p class="lead"><a href="https://github.com/factorapp/playground">Source</a></p>
         <button vecty:onclick="OnClick">Increment</button><p>{vecty-field:CountText}</p>
         <components:Alert AlertType="alert-info" Text="Hello World" />

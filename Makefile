@@ -16,7 +16,7 @@ parse:
 
 .phony: docker
 docker:
-	docker build -t bketelsen/playground .
+	docker build -t bketelsen/playground:latest .
 
 .phony: docker-push
 docker-push:

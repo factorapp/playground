@@ -24,7 +24,7 @@ func (p *Index) Render() vecty.ComponentOrHTML {
 					vecty.Class("starter-template"),
 				),
 				elem.Heading1(
-					vecty.Text("Bootstrap starter template"),
+					vecty.Text("Factor Web Assembly Framework"),
 				),
 				&components.Badge{
 					BadgeType: "badge-dark",
@@ -34,9 +34,9 @@ func (p *Index) Render() vecty.ComponentOrHTML {
 					vecty.Markup(
 						vecty.Class("lead"),
 					),
-					vecty.Text("Use this document as a way to quickly start any new project."),
+					vecty.Text("Build highly performant web applications."),
 					elem.Break(),
-					vecty.Text("All you get is this text and a mostly barebones HTML document."),
+					vecty.Text("Using the language you love."),
 				),
 				elem.Paragraph(
 					vecty.Markup(

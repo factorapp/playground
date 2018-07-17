@@ -19,6 +19,12 @@ func main() {
 		// from the map of params and says hello.
 		vecty.RenderBody(&pages.Index{Name: "Brian"})
 	})
+	r.HandleFunc("/components", func(context *router.Context) {
+
+		// The handler for this route simply grabs the name parameter
+		// from the map of params and says hello.
+		vecty.RenderBody(&pages.Components{Name: "Brian"})
+	})
 	// You must call Start in order to start listening for changes
 	// in the url and trigger the appropriate handler function.
 	r.Start()

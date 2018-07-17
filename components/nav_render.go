@@ -52,7 +52,7 @@ func (p *Nav) Render() vecty.ComponentOrHTML {
 					elem.Anchor(
 						vecty.Markup(
 							vecty.Class("nav-link"),
-							prop.Href("#"),
+							prop.Href("/"),
 						),
 						vecty.Text("Home"),
 						elem.Span(
@@ -65,42 +65,18 @@ func (p *Nav) Render() vecty.ComponentOrHTML {
 				),
 				elem.ListItem(
 					vecty.Markup(
-						vecty.Class("nav-item"),
-					),
-					elem.Anchor(
-						vecty.Markup(
-							vecty.Class("nav-link"),
-							prop.Href("#"),
-						),
-						vecty.Text("Link"),
-					),
-				),
-				elem.ListItem(
-					vecty.Markup(
-						vecty.Class("nav-item"),
-					),
-					elem.Anchor(
-						vecty.Markup(
-							vecty.Class("nav-link", "disabled"),
-							prop.Href("#"),
-						),
-						vecty.Text("Disabled"),
-					),
-				),
-				elem.ListItem(
-					vecty.Markup(
 						vecty.Class("nav-item", "dropdown"),
 					),
 					elem.Anchor(
 						vecty.Markup(
 							vecty.Class("nav-link", "dropdown-toggle"),
-							prop.Href("https://example.com"),
+							prop.Href("/components"),
 							prop.ID("dropdown01"),
 							vecty.Data("toggle", "dropdown"),
 							vecty.Attribute("aria-haspopup", "true"),
 							vecty.Attribute("aria-expanded", "false"),
 						),
-						vecty.Text("Dropdown"),
+						vecty.Text("Components"),
 					),
 					elem.Div(
 						vecty.Markup(
@@ -110,9 +86,9 @@ func (p *Nav) Render() vecty.ComponentOrHTML {
 						elem.Anchor(
 							vecty.Markup(
 								vecty.Class("dropdown-item"),
-								prop.Href("#"),
+								prop.Href("/components#alerts"),
 							),
-							vecty.Text("Action"),
+							vecty.Text("Alerts"),
 						),
 						elem.Anchor(
 							vecty.Markup(
